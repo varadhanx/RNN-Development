@@ -36,7 +36,7 @@ def predict_sentiment(review):
 
     return sentiment,prediction[0][0]
 
-import Streamlit as st
+import streamlit as st
 #streamlit app
 st.title("IMDB Movie review sentiment Analysis")
 st.write("Enter a movie review to classify it as positive or negative")
@@ -56,5 +56,6 @@ if st.button('classify'):
 else :
 
     st.write('Please enter a movie review .')
+
 
 
