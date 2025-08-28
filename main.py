@@ -23,7 +23,8 @@ def decoded_review(encoded_review):
 
 def preprocess_text(text):
     words=text.lower().split()
-    encoded_review=[word_index.get(wod,2)+3 for word in words]
+    encoded_review = [word_index.get(word, 2) + 3 for word in words]
+
 
     padded_review=sequence.pad_sequences([encoded_review],maxlen=500)
     return padded_review
@@ -56,6 +57,7 @@ if st.button('classify'):
 else :
 
     st.write('Please enter a movie review .')
+
 
 
 
